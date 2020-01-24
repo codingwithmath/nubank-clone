@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Animated } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 
@@ -23,6 +23,7 @@ import {
   CardFooter,
   CardFooterContent,
   CardFooterMessage,
+  CardButton,
   CardFooterIcon,
   Annotation 
 } from './styles';
@@ -92,11 +93,13 @@ export default function Main() {
               <MaterialIcons name="attach-money" size={28} color="#999" />
               <CardHeaderText>NuConta</CardHeaderText>
               </CardHeaderTitle>
-              <MaterialIcons name="visibility-off" size={28} color="#999" />
+              <CardButton>
+                <MaterialIcons name={"visibility-off"} size={28} color="#999" />
+              </CardButton>
             </CardHeader>
             <CardContent>
               <Title>Saldo disponível</Title>
-              <Description> R$ 200.000,69 </Description>
+              <Description> R$ 1.004.051,19 </Description>
             </CardContent>
             <CardFooter>
               <CardFooterContent>
@@ -106,9 +109,11 @@ export default function Main() {
                     Recarga de R$ 10,00 efetuada no numero (11) 99999-9999 ontem
                   </Annotation>
                 </CardFooterMessage>
-                <CardFooterIcon>
-                  <MaterialIcons name="keyboard-arrow-right" size={24} color="#999" />
-                </CardFooterIcon>
+                <CardButton>
+                  <CardFooterIcon>
+                    <MaterialIcons name="keyboard-arrow-right" size={24} color="#999" />
+                  </CardFooterIcon>
+                </CardButton>  
               </CardFooterContent>
             </CardFooter>
           </Card>

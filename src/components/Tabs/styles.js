@@ -13,6 +13,8 @@ export const TabsContainer = styled.ScrollView.attrs({
 })`
 `;
 
+export const TabsButton = styled.TouchableOpacity``;
+
 export const TabsItem = styled.View`
   width: 100px;
   height: 100px;

@@ -85,6 +85,8 @@ export const CardFooterMessage = styled.View`
   margin-left: -5px;
 `;
 
+export const  CardButton = styled.TouchableOpacity``;
+
 export const Annotation = styled.Text`
   font-size: 13px;
   color: #333;
